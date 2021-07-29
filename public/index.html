@@ -7,16 +7,18 @@
     <title>Bookmark Landing Page by steve.ai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body class="font-Poppins">
     <!-- Header -->
     <header class="lg:px-10 xl:px-40">
-        <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+        <nav class="container flex items-center py-4 mt-4 sm:mt-0 md:fixed top-0 left-0 z-20 bg-white backdrop-opacity-70 sm:w-full sm:px-16">
             <div class="py-1"><img src="./images/logo-bookmark.svg" alt=""></div>
-            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
-                <li class="cursor-pointer hover:text-bookmark-red">Features</li>
-                <li class="cursor-pointer hover:text-bookmark-red">Pricing</li>
-                <li class="cursor-pointer hover:text-bookmark-red">Contact</li>
+            <ul class="hidden text-center sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
+                <li class="hover:text-bookmark-red"><a href="#features">Features</a></li>
+                <li class="hover:text-bookmark-red"><a href="#download">Download</a></li>
+                <li class="hover:text-bookmark-red"><a href="#contact">Contact</a></li>
                 <button type="button" class="btn btn-red hover-red rounded-md px-7 py-3 uppercase">Login</button>
             </ul>
             <div class="flex sm:hidden flex-1 justify-end">
@@ -27,14 +29,14 @@
 
     <!-- Hero -->
     <section class="relative lg:px-10 xl:px-40">
-        <div class="container flex flex-col-reverse lg:flex-row items-center gap-2 md:gap-8 mt-14 lg:mt-28">
+        <div class="container flex flex-col-reverse lg:flex-row items-center gap-2 md:gap-8 mt-14 sm:mt-28 lg:mt-36">
             <!-- Content -->
             <div class="flex flex-1 flex-col items-center lg:items-start">
                 <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6 font-bold">
                     A Simple Bookmark Manager
                 </h2>
                 <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
-                    A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+                    A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.
                 </p>
                 <div class="flex justify-center flex-wrap gap-6">
                     <button type="button" class="btn btn-purple hover-purple">Get it on Chrome</button>
@@ -51,7 +53,7 @@
     </section>
 
     <!-- Features -->
-    <section class="bg-white py-20 mt-20 lg:mt-60">
+    <section id="features" class="bg-white py-20 mt-20 lg:mt-60">
         <!-- Heading -->
         <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
             <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
@@ -123,7 +125,7 @@
     </section>
 
     <!-- Download -->
-    <section class="py-20 md:mt-20">
+    <section id="download" class="py-20 md:mt-20">
         <!-- Heading -->
         <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
             <h1 class="text-3xl text-center text-bookmark-blue">Download the extension</h1>
@@ -215,7 +217,7 @@
     </section>
 
     <!-- Contact Us -->
-    <section class="bg-bookmark-purple text-white py-20">
+    <section id="contact" class="bg-bookmark-purple text-white py-20">
         <div class="container">
             <div class="sm:w-3/4 lg:w-2/4 mx-auto">
                 <p class="font-light uppercase text-center tracking-widest mb-8">35,000+ ALREADY JOINED</p>
