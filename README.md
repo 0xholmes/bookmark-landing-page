@@ -4,4 +4,6 @@ Project source: https://www.frontendmentor.io/challenges/bookmark-landing-page-5
 
 Design: https://www.figma.com/file/aiCskBxwiJ55LNcI7SgHye/Bookmark-Landing-Page?node-id=0%3A6
 
-Link: https://6l74d.csb.app/
+Preview: https://6l74d.csb.app/
+
+https://f429u.csb.app/ - https://github.com/Mounir24/bookmark-landing-page
